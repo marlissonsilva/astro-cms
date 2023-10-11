@@ -6,20 +6,29 @@ ul {
     gap: 1rem;
     flex-wrap: wrap;
 }
+.card,
+.container-image{
+    border-radius: 0.6rem;
+}
 .card {
     width: 40ch;
-    /* height: 200px; */
+    min-height: 300px;
     list-style: none;
     text-align: center;
     justify-content: center;
+    box-shadow: 1px 3px 5px 1px gray;
 }
-.link-post {
+
+.container-image {
+    background-color: red;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+img {
+    width: 100%;
     height: 100%;
-    padding: 2rem 5rem;
-    background-color: rgb(20, 20, 58);
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    color: white;
+    border-radius: 0.6rem .6rem 0 0;
 }
 
 @media screen and (max-width: 568px) {
