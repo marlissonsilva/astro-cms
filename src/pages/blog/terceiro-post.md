@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: Terceiro post
 description: Esse esse meu terceiro post
 publishDate: 2023-10-11T02:22:53.189Z
-heroImage: https://img.freepik.com/fotos-gratis/um-design-colorido-com-um-design-em-espiral_188544-9588.jpg?w=1380&t=st=1696991094~exp=1696991694~hmac=efef79e07540d20a8674998daaf783cd6584c805bc65ae14ccc72889cc4a64b9
+heroImage: /assets/um-design-colorido-com-um-design-em-espiral_188544-9588.avif
 ---
 # UM TEXTO QUALQUER…
 
