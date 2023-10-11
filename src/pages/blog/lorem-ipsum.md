@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: "Lorem Ipsum "
 description: Lorem Ipsum quarto post
 publishDate: 2023-10-11T04:08:38.144Z
-heroImage: https://kinsta.com/wp-content/uploads/2020/08/tiger-jpg.jpg
+heroImage: /assets/tiger-jpg.jpg
 ---
 ### The standard Lorem Ipsum passage, used since the 1500s
 
