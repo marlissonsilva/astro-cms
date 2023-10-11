@@ -1,66 +1,122 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+html {
+	background-color: #f1f5f9;
+	font-family: sans-serif;
+}
+
 body {
-	font-family: Verdana, sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
-	background-color: #fff;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+	margin: 0 auto;
+	width: 100%;
 	line-height: 1.5;
-	color: #444;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-	color: #222;
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
 }
-a {
-	color: #3273dc;
+
+h1 {
+	color: purple;
+	font-size: 4rem;
 }
-nav a {
-	margin-right: 10px;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-content {
-	line-height: 1.6;
-}
-table {
-	width: 100%;
-}
-img {
+img{
 	max-width: 100%;
+	object-fit: cover;
 }
-code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
+
+main,
+.container {
+	max-width: 1240px;
+	margin: auto;
 }
-pre {
+main {
+	min-height: calc(100vh - 240px);
+}
+
+/* header */
+header {
+	background-color: black;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
 	padding: 1rem;
 }
-pre > code {
-	all: unset;
+
+article{
+	padding: 1rem;
 }
-blockquote {
-	border: 1px solid #999;
-	color: #222;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
+
+nav {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	gap: 2rem;
+	font-size: 1.5rem;
+}
+.logo {
+	color: white;
+}
+
+/* nav styles */
+.hamburger {
+	cursor: pointer;
+	margin-top: 0.5rem;
+}
+
+.hamburger .line {
+	display: block;
+	width: 40px;
+	height: 5px;
+	margin-bottom: 10px;
+	background-color: #d85f3a;
+}
+
+.nav-links {
+	width: 100%;
+	top: 5rem;
+	display: none;
+	margin: 0;
+}
+
+.nav-links a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	color: rgb(236, 233, 233);
+}
+
+.nav-links a:hover,
+a:focus {
+	background-color: #d16645;
+	border-radius: 0.3rem;
+}
+
+.expanded {
+	display: unset;
+}
+
+@media screen and (min-width: 836px) {
+	.nav-links {
+		margin-left: 5em;
+		display: block;
+		position: static;
+		width: auto;
+		background: none;
+	}
+
+	.nav-links a {
+		display: inline-block;
+		padding: 15px 20px;
+	}
+	.hamburger {
+		display: none;
+	}
 }

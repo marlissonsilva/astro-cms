@@ -1,13 +1,38 @@
 ---
+import Social from "./Social.astro";
 const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+  <div class="container">
+    &copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+    <p>Minhas midias sociais</p>
+    <div>
+      <Social platform="twitter" username="marlissonsilva" />
+      <Social platform="github" username="marlissonsilva" />
+      <Social platform="youtube" username="@marlyssonsilva2704" />
+      <Social platform="linkedin" username="in/marlysson-silva-mcs/" />
+    </div>
+  </div>
 </footer>
 <style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
+  footer {
+    background-color: black;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    color: white;
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 568px) {
+    footer {
+      flex-wrap: wrap;
+    }
+  }
 </style>

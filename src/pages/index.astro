@@ -1,72 +1,78 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import {SITE_TITLE, SITE_DESCRIPTION} from "../config";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project. Add a blog RSS feed with <a
-					href="https://docs.astro.build/en/guides/rss/"
-					>@astrojs/rss
-				</a>.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>🧑‍🚀 Hello, Astronaut!</h1>
+      <h2>My awesome blog subtitle</h2>
+      <p>
+        Nosso blog é o seu destino online para informações relevantes,
+        inspiração e entretenimento. Aqui, buscamos compartilhar conteúdo que
+        informa, envolve e enriquece sua vida.
+      </p>
+      <p>
+        Exploramos uma ampla gama de tópicos, desde dicas práticas para o dia a
+        dia até reflexões profundas sobre questões atuais. Nossa equipe de
+        redatores está empenhada em trazer artigos perspicazes e bem
+        pesquisados, tudo com o objetivo de proporcionar a você uma experiência
+        valiosa sempre que visitar nosso espaço virtual.
+      </p>
+      <p>
+        Quer esteja procurando por guias passo a passo, análises aprofundadas,
+        histórias inspiradoras ou apenas uma pausa divertida, estamos aqui para
+        atender às suas necessidades. Navegue por nossas categorias para
+        encontrar exatamente o que você procura e descubra novas perspectivas ao
+        longo do caminho. Acreditamos que a informação é a chave para a
+        capacitação, e é por isso que estamos comprometidos em oferecer um
+        conteúdo que educa e motiva. Valorizamos a interação com nossa
+        comunidade, por isso incentivamos você a compartilhar seus pensamentos,
+        ideias e opiniões nos comentários. Juntos, podemos criar um ambiente
+        enriquecedor de aprendizado e troca de conhecimentos.
+      </p>
+      <p>
+        Obrigado por nos escolher como sua fonte de informações. Prepare-se para
+        embarcar em uma jornada de descoberta e aprendizado conosco. Não deixe
+        de nos seguir nas redes sociais e se inscrever para receber nossas
+        atualizações mais recentes diretamente em sua caixa de entrada.
+      </p>
+      <p>
+        Bem-vindo mais uma vez ao meu blog! Sinta-se em casa e comece a
+        explorar." Lembre-se de personalizar o texto de acordo com o nome do seu
+        blog, sua proposta única e os tópicos que você pretende abordar.
+      </p>
+    </main>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+    <script>
+      declare global {
+        interface Window {
+          netlifyIdentity: any;
+        }
+      }
 
-		<script>
-			declare global {
-				interface Window {
-					netlifyIdentity: any;
-				}
-			}
-
-			if (window.netlifyIdentity) {
-			  window.netlifyIdentity.on("init", ((user: any) => {
-				if (!user) {
-				  window.netlifyIdentity.on("login", () => {
-					document.location.href = "/admin/";
-				  });
-				}
-			  }));
-			}
-		  </script>
-	</body>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user: any) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
