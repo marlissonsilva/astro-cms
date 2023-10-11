@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: Terceiro post
 description: Esse esse meu terceiro post
 publishDate: 2023-10-11T02:22:53.189Z
-heroImage: /assets/um-design-colorido-com-um-design-em-espiral_188544-9588.avif
+heroImage: /assets/um-design-colorido-com-um-design-em-espiral_188544-9588.jpg
 ---
 # UM TEXTO QUALQUER…
 
