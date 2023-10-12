@@ -47,6 +47,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
                   <div class="container-image">
                     <img
                       src={post.frontmatter.heroImage}
+                      
                       alt={post.frontmatter.title}
                     />
                   </div>
@@ -69,5 +70,9 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
       </content>
     </main>
     <Footer />
+    <script>
+       {console.log(heroImage)}
+    </script>
+   
   </body>
 </html>

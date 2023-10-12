@@ -30,6 +30,7 @@ main,
 }
 main {
 	min-height: calc(100vh - 240px);
+	padding: 1rem;
 }
 
 /* header */
@@ -43,9 +44,7 @@ header {
 	padding: 1rem;
 }
 
-article{
-	padding: 1rem;
-}
+
 
 nav {
 	display: flex;
