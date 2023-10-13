@@ -3,7 +3,7 @@ layout: ../../layouts/BlogPost.astro
 title: O básico de HTML
 description: Veja tags básicas do HTML
 publishDate: 2023-10-13T09:54:25.459Z
-heroImage: /assets/unnamed.png
+heroImage: /assets/html.jpg
 ---
 Os **elementos HTML** **`<h1>`–`<h6>`** representam seis níveis de título de seção. `<h1>` é o nível de seção mais alto e `<h6>` é o mais baixo.
 
