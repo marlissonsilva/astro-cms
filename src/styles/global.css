@@ -23,14 +23,12 @@ img{
 	object-fit: cover;
 }
 
-main,
-.container {
-	max-width: 1240px;
-	margin: auto;
-}
 main {
+	width: 960px;
+	max-width: calc(100% - 2em);
+	margin: auto;
+	padding: 3em 1em;
 	min-height: calc(100vh - 240px);
-	padding: 1rem;
 }
 
 /* header */
