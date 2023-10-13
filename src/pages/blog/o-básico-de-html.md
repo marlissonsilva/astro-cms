@@ -19,6 +19,8 @@ Elementos de **cabeçalho** são implementados em seis níveis, `<h1>` é o 
 * *Elementos pais permitidos* Qualquer elemento que aceite [conteúdos de fluxo](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Content_categories#flow_content); ou como um elemento filho do grupo de elementos de cabeçalho [`<hgroup>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/hgroup)
 * *Interface DOM* [`HTMLHeadingElement` (en-US)](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement "Currently only available in English (US)")
 
+  ![HTML 5](/assets/unnamed.png)
+
 ## [Atributos](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements#atributos)
 
 Esses elementos incluem os [atributos globais](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes).
