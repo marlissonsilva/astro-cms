@@ -21,7 +21,7 @@ const {
 // Match the `heroImage` frontmatter string to its correct
 // Astro.glob() import of the file in the src/ directory.
 const assets = await Astro.glob("../assets/**/*");
-const heroImageAsset = assets.find((asset) => {
+const heroImageAsset = assets.find((asset: { default: { src: string; }; }) => {
   if (!heroImage) {
     return false;
   }

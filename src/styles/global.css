@@ -31,11 +31,6 @@ main {
 	min-height: calc(100vh - 240px);
 }
 
-/* header */
-header {
-	background-color: black;
-}
-
 .container {
 	display: flex;
 	justify-content: space-between;
